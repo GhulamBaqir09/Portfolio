@@ -1,0 +1,183 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.477);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+.name {
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 96px;
+}
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(249, 246, 246);
+  font-size: 60px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left-half {
+    position: relative; /* Add relative positioning */
+    width: 50%; /* Adjust the width as needed */
+    height: 103vh; /* Adjust the height as needed */
+  }
+  .left-half img{
+    width: 100%; /* Adjust the width as needed */
+    height: 110vh; 
+  }
+  
+  .fullname {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(10, 10, 10);
+    z-index: 1;
+  }
+  
+  .fullname h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Sansation', sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+  
+  .role {
+    font-family: 'Saira', sans-serif;
+    font-size: 16px;
+    margin: 10px 0 0;
+    font-weight: 250;
+  }
+  
+  .resume {
+    background-color: transparent;
+    border: 1px solid rgb(15, 15, 15);
+    color: rgb(9, 9, 9);
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Saira', sans-serif;
+    z-index: 1; /* Add z-index to ensure it's on top of the image */
+  }
+  
+  .resume:hover {
+    background-color: rgb(15, 15, 15);
+    color: rgb(249, 244, 244);
+  }
+  
+  .photo {
+    width: 100%;
+    height: calc(100vh - 100px); /* Calculate the height minus the 100px gap */
+    object-fit: cover;
+    filter: brightness(60%) blur(2px);
+    margin-top: 100px; /* Add a margin to the top of the image */
+  }
+  
+  .right-half {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .heading {
+    font-size: 40px; /* Increased font size to 40px */
+    font-weight: bold;
+    margin-top: 150px; /* Increased margin bottom to 10px for more spacing */
+    text-align: center; /* Added to center align the heading */
+}
+  
+  .subheading {
+    font-size: 18px;
+    color: #090909;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #0b0b0b;
+  }
+  
+  .description-field {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #070707;
+    resize: vertical;
+    margin-bottom: 25px;
+  }
+  
+  .submit-btn {
+    float: right; /* Add this to move the button to the right */
+    margin-right: 1px; /* Add this to add some spacing to the right */
+    background-color: transparent;
+    border: 1px solid #070707;
+    padding: 15px 30px; /* Increase padding to increase height and width */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  .submit-btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .footer {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(2, 2, 2, 0.999);
+    display: flex;
+    justify-content: center;
+    color: white;
+    transform: translateY(-50%);
+  }
+  
+  .footer p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Saira', sans-serif;
+    margin-right: 20px; /* Add some space between the text and the icon */
+  }
