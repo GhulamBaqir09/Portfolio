@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sensation:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Intro.css">
+    <link rel="stylesheet" href="https://fontawesome.com/">
+</head>
+<body>
+    <div class="background">
+        <img src="Baqir.jpg" alt="Background Image" width="100%" height="100%">
+        <div class="box">
+            <p class="name">BAQIR</p>
+        </div>
+        <div class="button">
+            <a href="Portfolioo.html"><p class="entersitebutton">ENTER SITE</p></a>
+        </div>
+        <div class="copyright"><p>© GHULAM BAQIR 2024. ALL RIGHTS RESERVED.</p>
+            <p>Coder | Designer | Developer</p>
+            </div>
+            <div class="menu">
+                <div class="menu-button" onclick="toggleMenu()">
+                    <span class="menu-icon"></span>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="menu-content" id="menuContent">
+                    <a href="#" class="menu-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menuContent = document.getElementById("menuContent");
+            menuContent.classList.toggle("show-menu");
+        }
+    </script>
+</body>
+</html>
